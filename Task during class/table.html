@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table task</title>
+  <meta name="description" content="this is a table task given by mashup stack">
+  <meta name="author" content="Sreejith S S from mashup stack">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body{
+      padding: 50px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    table{
+      width: 50%;
+    }
+    table,th,td{
+      border: 0.5px solid rgb(221, 220, 220);
+      border-collapse: collapse;
+      padding: 20px;
+    }
+    tr td.product-name{
+      text-align: right;
+    }
+    td{
+      font-weight: 400;
+      color: rgb(85, 81, 81);
+    }
+    th{
+      color: gray;
+    }
+    i{
+      padding: 10px;
+      border-radius: 5px;
+    }
+    i:hover{
+      cursor: pointer;
+    }
+    .icon-box{
+      display: flex;
+      justify-content: space-between;
+    }
+    .edit{
+      color: white;
+      background-color: rgb(91, 209, 91);
+      opacity: .9;
+    }
+    .edit:hover{
+      opacity: 1;
+    }
+    .view{
+      color: white;
+      background-color: rgb(236, 236, 58);
+      opacity: .9;
+    }
+    .view:hover{
+      opacity:1
+    }
+    .delete{
+      color: white;
+      background-color: rgb(226, 61, 61) ;
+      opacity: .9;
+    }
+    .delete:hover{
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <th>Product name</th>
+      <th>Price in INR</th>
+      <th>Action</th>
+    </tr>
+    <tr>
+      <td class="product-name">I phone 13 mini</td>
+      <td>&#x20b9; 55000</td>
+      <td class="icon-box">
+        <a href="">
+          <i class="fa fa-pencil edit" title="Edit" aria-hidden="true"></i>
+        </a>
+        <a href="">
+          <i class="fa fa-eye view" title="View" aria-hidden="true"></i>
+        </a>
+        <a href="">
+          <i class="fa fa-trash delete" title="Delete" aria-hidden="true"></i>
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td class="product-name">I phone 15</td>
+      <td>&#x20b9; 65000</td>
+      <td class="icon-box">
+        <i class="fa fa-pencil edit" title="Edit" aria-hidden="true"></i>
+        <i class="fa fa-eye view" title="View" aria-hidden="true"></i>
+        <i class="fa fa-trash delete" title="Delete" aria-hidden="true"></i>
+      </td>
+    </tr>
+    <tr>
+      <td class="product-name">I phone 12 mini</td>
+      <td>&#x20b9; 95000</td>
+      <td class="icon-box">
+        <i class="fa fa-pencil edit" title="Edit" aria-hidden="true"></i>
+        <i class="fa fa-eye view" title="View" aria-hidden="true"></i>
+        <i class="fa fa-trash delete" title="Delete" aria-hidden="true"></i>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
